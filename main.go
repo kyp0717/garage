@@ -2,22 +2,21 @@ package main
 
 import (
 	"log"
-
-	"github.com/joho/godotenv"
+	// "github.com/kyp0717/garage/database"
+	// "github.com/joho/godotenv"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/logger"
-	"github.com/kyp0717/garage/database"
 	"github.com/kyp0717/garage/handlers"
 )
 
-func init() {
-	if err := godotenv.Load("env/.env.postgres"); err != nil {
-		log.Fatal("Error in loading .env file.")
-	}
-	database.ConnectDB()
+// func init() {
+// 	if err := godotenv.Load("env/.env.postgres"); err != nil {
+// 		log.Fatal("Error in loading .env file.")
+// 	}
+// 	database.ConnectDB()
 
-}
+// }
 
 func main() {
 	app := fiber.New(fiber.Config{
