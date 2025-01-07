@@ -1,19 +1,15 @@
-<<<<<<< HEAD
-# garagedoor
-garage door directory
-=======
 <div align="center">
 
 # Go/Fiber🧬+<span style="color:yellow"></></span>Templ to-do list app with user login and HTMx-powered frontend (Demo)
 
 A full-stack application using Golang's Fiber framework with session-based authentication. Once we are authenticated we can enter a view from which we can manage a list of tasks (list, update and delete). Requests to the backend are controlled by [</>htmx](https://htmx.org/) ([hypermedia](https://hypermedia.systems/) only).
 
-![GitHub License](https://img.shields.io/github/license/kyp0717/garage) ![Static Badge](https://img.shields.io/badge/Go-%3E=1.18-blue)
+![GitHub License](https://img.shields.io/github/license/emarifer/gofiber-templ-htmx) ![Static Badge](https://img.shields.io/badge/Go-%3E=1.18-blue)
 
 </div><br />
 
 >[!NOTE]
->***This application is an clone of this [repository](https://github.com/kyp0717/rust-axum-askama-htmx-todoapp) of mine (rust-axum-askama-htmx-todoapp), but made in `Golang`.***
+>***This application is an clone of this [repository](https://github.com/emarifer/rust-axum-askama-htmx-todoapp) of mine (rust-axum-askama-htmx-todoapp), but made in `Golang`.***
 
 <hr />
 
@@ -41,7 +37,7 @@ On the other hand, the styling of the views is achieved through Tailwind CSS and
 Finally, minimal use of [_hyperscript](https://hyperscript.org/) is made to achieve the action of closing alerts when they are displayed and the action of showing/hiding the password in corresponding text input fields.
 
 >[!NOTE]
->***This application is identical, although much more improved, to that of a previous [repository](https://github.com/kyp0717/gofiber-htmx-todolist) of mine, which is developed in GoFiber-template/html instead of [Templ](https://templ.guide/) templating language, as in this case.***
+>***This application is identical, although much more improved, to that of a previous [repository](https://github.com/emarifer/gofiber-htmx-todolist) of mine, which is developed in GoFiber-template/html instead of [Templ](https://templ.guide/) templating language, as in this case.***
 
 ---
 
@@ -107,4 +103,3 @@ $ templ generate # The `templ generate --watch` command will watch the project f
 ---
 
 ### Happy coding 😀!!
->>>>>>> 9f35027 (change to module base name)
