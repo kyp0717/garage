@@ -1,10 +1,18 @@
 package partials
 
 templ Navbar(fromProtected bool, username string) {
-	<nav class="navbar bg-primary text-primary-content fixed top-0 z-10">
+	<nav class="navbar bg-blue-200 text-primary-content fixed top-0 z-10">
 		<div class="navbar-start">
 			<a hx-swap="transition:true" class="btn btn-ghost text-xl" href="/">
-				Todo List
+				<img src="/img/garageguide_logo_small.png" alt="Garage Guide Logo" class="h-8 mr-2 inline-block"/>
+			</a>
+		</div>
+		<div class="navbar-center">
+			<a hx-swap="transition:true" class="btn btn-ghost text-lg" href="/find-door">
+				Find Door
+			</a>
+			<a hx-swap="transition:true" class="btn btn-ghost text-lg" href="/find-installer">
+				Find Installer
 			</a>
 		</div>
 		<div class="navbar-end">
@@ -42,12 +50,25 @@ templ Navbar(fromProtected bool, username string) {
 					Logout
 				</button>
 			} else {
-				<a hx-swap="transition:true" class="btn btn-ghost text-lg" href="/register">
-					Register
-				</a>
-				<a hx-swap="transition:true" class="btn btn-ghost text-lg" href="/login">
-					Login
-				</a>
+				<div class="dropdown dropdown-end">
+					<label tabindex="0" class="btn btn-ghost text-lg">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+						</svg>
+					</label>
+					<ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+						<li>
+							<a hx-swap="transition:true" href="/signup" class="text-lg">
+								Register
+							</a>
+						</li>
+						<li>
+							<a hx-swap="transition:true" href="/login" class="text-lg">
+								Login
+							</a>
+						</li>
+					</ul>
+				</div>
 			}
 		</div>
 	</nav>
