@@ -31,17 +31,7 @@ func HomeIndex(fromProtected bool) templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<section class=\"mx-auto w-fit flex flex-row gap-8 text-center items-center\"><img src=\"/img/garageguide_logo.png\" alt=\"Garage Guide Logo\" class=\"h-32\"><div class=\"flex flex-col gap-8\"><h1 class=\"text-5xl font-bold\">Welcome to Garage Guide!</h1><p class=\"text-2xl font-thin\">Your ultimate solution for finding the best garage doors and installers.</p>")
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		if !fromProtected {
-			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "<hr class=\"my-4 w-4/5 mx-auto opacity-25\"><p class=\"text-base font-thin\">Do you have an account?</p><footer class=\"flex gap-4 justify-center\"><a hx-swap=\"transition:true\" href=\"/login\" class=\"badge badge-primary px-6 py-4 hover:scale-[1.1] text-lg font-thin\">Log In</a> <a hx-swap=\"transition:true\" href=\"/register\" class=\"badge badge-neutral px-6 py-4 hover:scale-[1.1] text-lg font-thin\">Sign Up</a></footer>")
-			if templ_7745c5c3_Err != nil {
-				return templ_7745c5c3_Err
-			}
-		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 3, "</div></section>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<section class=\"mx-auto w-fit flex flex-row gap-8 text-center items-start\"><img src=\"/img/garageguide_logo.png\" alt=\"Garage Guide Logo\" class=\"h-32\"><div class=\"flex flex-col gap-4\"><h1 class=\"text-5xl font-bold\">Welcome to Garage Guide!</h1><p class=\"text-2xl font-thin\">Need help finding someone to install your garage door?  </p><p class=\"text-2xl font-thin mb-8\">We can help!  Tell us where you live.</p><hr class=\"my-4 w-full opacity-25\"><form class=\"flex flex-col gap-4 items-center\" action=\"/search\" method=\"get\"><label class=\"text-lg font-thin\">I need a professional to install garage door.</label><div class=\"flex flex-row gap-4 items-center\"><input id=\"area-code\" name=\"area_code\" type=\"text\" class=\"input input-bordered input-primary bg-slate-800\" required placeholder=\"Enter your area code\"> <button type=\"submit\" class=\"badge badge-primary px-6 py-4 hover:scale-[1.1] text-lg font-thin\">Search</button></div></form><hr class=\"my-4 w-full opacity-25\"><div class=\"flex flex-col items-center mt-4 gap-2\"><span class=\"text-lg font-thin\">I can provide professional garage door installation.</span> <button class=\"badge badge-secondary px-6 py-4 hover:scale-[1.1] text-lg font-thin\">Service Provider</button></div></div></section>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
